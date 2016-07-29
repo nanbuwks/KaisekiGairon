@@ -1,0 +1,46 @@
+\usepackage{mystyle}
+%% from review-pdfmaker
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\gtfamily\sffamily\bfseries\upshape \leftmark}
+%% \lhead{\gtfamily\sffamily\bfseries\upshape}
+\chead{}
+\rhead{\gtfamily\sffamily\bfseries\upshape \rightmark}
+%% \rhead{\gtfamily\sffamily\bfseries\upshape}
+\renewcommand{\sectionmark}[1]{\markright{\thesection~#1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{\prechaptername\ \thechapter\ \postchaptername~#1}{}}
+\renewcommand{\headfont}{\gtfamily\sffamily\bfseries}
+
+\fancypagestyle{plainhead}{%
+\fancyhead{}
+%% \fancyhead[RE]{\rightmark} % add nanbuwks
+%% \fancyhead[LO]{\leftmark} % add nanbuwks
+
+
+\fancyfoot{} % clear all header and footer fields
+\fancyfoot[CE,CO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+
+%% using Helvetica as sans-serif
+\renewcommand{\sfdefault}{phv}
+
+%% for listings
+%\renewcommand{\lstlistingname}{List}
+%\lstset{%
+%  breaklines=true,%
+%  breakautoindent=false,%
+%  breakindent=0pt,%
+%  fontadjust=true,%
+%  backgroundcolor=\color{shadecolor},%
+%  frame=single,%
+%  framerule=0pt,%
+%  basicstyle=\ttfamily\scriptsize,%
+%  commentstyle=\color{reviewgreen},%
+%  identifierstyle=\color{reviewblue},%
+%  stringstyle=\color{reviewred},%
+%  keywordstyle=\bfseries\color{reviewdarkred},%
+%}
+
+\geometry{top=18mm,bottom=18mm,left=13mm,right=13mm}
+\sloppy

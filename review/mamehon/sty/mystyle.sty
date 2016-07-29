@@ -1,0 +1,28 @@
+\def\@makechapterhead#1{\hbox{}%
+\vspace*{0\Cvs}
+%\vskip2\Cvs
+\vskip0\Cvs
+{\parindent\z@
+\raggedright 
+\reset@font\huge\bfseries
+%\reset@font\large\bfseries
+\ifnum \c@secnumdepth >\m@ne
+\setlength\@tempdima{\linewidth}%
+\if@mainmatter
+\setbox\z@\hbox{\@chapapp\thechapter\@chappos\hskip1zw}%
+%\addtolength\@tempdima{-\wd\z@}% これで縦箱の長さが行幅と同じになります。
+\unhbox\z@\par%%%%\parとすることで章番号とタイトルが分離。
+\fi
+%\vskip\baselineskip %縦方向に空白
+\vskip.1\baselineskip %縦方向に空白
+\hrule height1pt %太さ1ptの横罫線を引く
+%\vskip.5\baselineskip
+\vskip.1\baselineskip
+\vtop{\hsize\@tempdima#1}%章のタイトル出力
+%\vskip.5\baselineskip %縦方向に空白
+\vskip.1\baselineskip %縦方向に空白
+\hrule height1pt %太さ1ptの横罫線を引く
+%\fi}\vskip3\Cvs}
+%\fi}\vskip3\Cvs}
+\fi}\vskip1\Cvs}
+
